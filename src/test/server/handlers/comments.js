@@ -1,11 +1,9 @@
+import { API_URL } from '@/config';
 import { rest } from 'msw';
 import { nanoid } from 'nanoid';
 
-import { API_URL } from '@/config';
-
 import { db, persistDb } from '../db';
 import { requireAuth, delayedResponse } from '../utils';
-
 
 export const commentsHandlers = [
   rest.get(`${API_URL}/comments`, (req, res, ctx) => {

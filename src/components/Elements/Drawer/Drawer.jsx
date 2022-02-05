@@ -13,14 +13,7 @@ const sizes = {
   full: 'max-w-full',
 };
 
-export const Drawer = ({
-  title,
-  children,
-  isOpen,
-  onClose,
-  renderFooter,
-  size = 'md',
-}) => {
+export const Drawer = ({ title, children, isOpen, onClose, renderFooter, size = 'md' }) => {
   return (
     <Transition.Root show={isOpen} as={React.Fragment}>
       <Dialog

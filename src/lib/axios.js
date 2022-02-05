@@ -1,8 +1,8 @@
-import Axios from 'axios';
-import PropTypes from 'prop-types';
 import { API_URL } from '@/config';
 import { useNotificationStore } from '@/stores/notifications';
 import storage from '@/utils/storage';
+import Axios from 'axios';
+import PropTypes from 'prop-types';
 
 function authRequestInterceptor(config) {
   const token = storage.getToken();

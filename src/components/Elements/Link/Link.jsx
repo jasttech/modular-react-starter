@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
 import clsx from 'clsx';
+import PropTypes from 'prop-types';
 import { Link as RouterLink } from 'react-router-dom';
 
 export const Link = ({ className, children, ...props }) => {

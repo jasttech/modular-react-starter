@@ -1,7 +1,6 @@
-import { useQuery } from 'react-query';
-import PropTypes from 'prop-types';
-
 import { axios } from '@/lib/axios';
+import { useQuery } from 'react-query';
+
 export const getUsers = () => {
   return axios.get(`/users`);
 };

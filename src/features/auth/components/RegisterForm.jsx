@@ -1,13 +1,12 @@
-import { Switch } from '@headlessui/react';
-import * as React from 'react';
-import { Link } from 'react-router-dom';
-import * as z from 'zod';
-import PropTypes from 'prop-types';
-
 import { Button } from '@/components/Elements';
 import { Form, InputField, SelectField } from '@/components/Form';
 import { useTeams } from '@/features/teams';
 import { useAuth } from '@/lib/auth';
+import { Switch } from '@headlessui/react';
+import PropTypes from 'prop-types';
+import * as React from 'react';
+import { Link } from 'react-router-dom';
+import * as z from 'zod';
 
 const schema = z
   .object({

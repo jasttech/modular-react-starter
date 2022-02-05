@@ -1,8 +1,7 @@
-import { useMutation } from 'react-query';
-import PropTypes from 'prop-types';
-
 import { axios } from '@/lib/axios';
 import { useNotificationStore } from '@/stores/notifications';
+import PropTypes from 'prop-types';
+import { useMutation } from 'react-query';
 
 export const updateTeam = ({ teamId, data }) => {
   return axios.patch(`/teams/${teamId}`, data);

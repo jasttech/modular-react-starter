@@ -1,8 +1,7 @@
-import { TrashIcon } from '@heroicons/react/outline';
-import PropTypes from 'prop-types';
-
 import { Button, ConfirmationDialog } from '@/components/Elements';
 import { Authorization, ROLES } from '@/lib/authorization';
+import { TrashIcon } from '@heroicons/react/outline';
+import PropTypes from 'prop-types';
 
 import { useDeleteDiscussion } from '../api/deleteDiscussion';
 

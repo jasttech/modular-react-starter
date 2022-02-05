@@ -1,9 +1,8 @@
-import { useMutation } from 'react-query';
-import PropTypes from 'prop-types';
-
 import { axios } from '@/lib/axios';
 import { queryClient } from '@/lib/react-query';
 import { useNotificationStore } from '@/stores/notifications';
+import PropTypes from 'prop-types';
+import { useMutation } from 'react-query';
 
 export const deleteComment = ({ commentId }) => {
   return axios.delete(`/comments/${commentId}`);
@@ -12,7 +11,6 @@ export const deleteComment = ({ commentId }) => {
 deleteComment.propTypes = {
   commentId: PropTypes.string.isRequired,
 };
-
 
 export const useDeleteComment = ({ config, discussionId }) => {
   const { addNotification } = useNotificationStore();

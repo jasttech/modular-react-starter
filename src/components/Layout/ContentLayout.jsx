@@ -1,5 +1,5 @@
-import * as React from 'react';
 import PropTypes from 'prop-types';
+import * as React from 'react';
 
 import { Head } from '../Head';
 
@@ -20,4 +20,4 @@ export const ContentLayout = ({ children, title }) => {
 ContentLayout.propTypes = {
   children: PropTypes.node.isRequired,
   title: PropTypes.string.isRequired,
-}
+};

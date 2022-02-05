@@ -2,7 +2,6 @@ import clsx from 'clsx';
 
 import { FieldWrapper } from './FieldWrapper';
 
-
 export const InputField = (props) => {
   const { type = 'text', label, className, registration, error } = props;
   return (

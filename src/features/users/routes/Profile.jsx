@@ -1,7 +1,6 @@
-import PropTypes from 'prop-types';
-
 import { ContentLayout } from '@/components/Layout';
 import { useAuth } from '@/lib/auth';
+import PropTypes from 'prop-types';
 
 import { UpdateProfile } from '../components/UpdateProfile';
 

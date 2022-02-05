@@ -1,11 +1,10 @@
-import { PlusIcon } from '@heroicons/react/outline';
-import * as z from 'zod';
-import PropTypes from 'prop-types';
-
 import { Button } from '@/components/Elements';
 import { Form, FormDrawer, TextAreaField } from '@/components/Form';
+import { PlusIcon } from '@heroicons/react/outline';
+import PropTypes from 'prop-types';
+import * as z from 'zod';
 
-import { CreateCommentDTO, useCreateComment } from '../api/createComment';
+import { useCreateComment } from '../api/createComment';
 
 const schema = z.object({
   body: z.string().min(1, 'Required'),

@@ -1,7 +1,6 @@
-import { useQuery } from 'react-query';
-import PropTypes from 'prop-types';
-
 import { axios } from '@/lib/axios';
+import PropTypes from 'prop-types';
+import { useQuery } from 'react-query';
 
 export const getComments = ({ discussionId }) => {
   return axios.get(`/comments`, {

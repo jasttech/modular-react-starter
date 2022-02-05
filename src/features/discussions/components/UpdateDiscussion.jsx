@@ -1,10 +1,9 @@
-import { PencilIcon } from '@heroicons/react/solid';
-import * as z from 'zod';
-import PropTypes from 'prop-types';
-
 import { Button } from '@/components/Elements';
 import { Form, FormDrawer, InputField, TextAreaField } from '@/components/Form';
 import { Authorization, ROLES } from '@/lib/authorization';
+import { PencilIcon } from '@heroicons/react/solid';
+import PropTypes from 'prop-types';
+import * as z from 'zod';
 
 import { useDiscussion } from '../api/getDiscussion';
 import { useUpdateDiscussion } from '../api/updateDiscussion';

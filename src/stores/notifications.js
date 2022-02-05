@@ -1,7 +1,6 @@
 import { nanoid } from 'nanoid';
 import create from 'zustand';
 
-
 export const useNotificationStore = create((set) => ({
   notifications: [],
   addNotification: (notification) =>
