@@ -1,9 +1,8 @@
-import { PencilIcon } from '@heroicons/react/solid';
-import * as z from 'zod';
-
 import { Button } from '@/components/Elements';
 import { Form, FormDrawer, InputField, TextAreaField } from '@/components/Form';
 import { useAuth } from '@/lib/auth';
+import { PencilIcon } from '@heroicons/react/solid';
+import * as z from 'zod';
 
 import { useUpdateProfile } from '../api/updateProfile';
 

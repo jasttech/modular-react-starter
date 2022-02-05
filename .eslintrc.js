@@ -32,6 +32,7 @@ module.exports = {
         'plugin:jest-dom/recommended',
       ],
       rules: {
+        'import/export': 0,
         'no-restricted-imports': [
           'error',
           {
@@ -50,6 +51,7 @@ module.exports = {
           },
         ],
         'import/default': 'off',
+        'import/named': 'off',
         'import/no-named-as-default-member': 'off',
         'import/no-named-as-default': 'off',
         'import/no-unresolved': 'off',
@@ -61,6 +63,7 @@ module.exports = {
         'no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: false }],
         'no-unused-expressions': 'off',
         'no-unused-labels': 'off',
+        'no-undef': 'off',
 
         'prettier/prettier': ['error', {}, { usePrettierrc: true }],
       },

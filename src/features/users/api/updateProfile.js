@@ -1,9 +1,8 @@
-import { useMutation } from 'react-query';
-import PropTypes from 'prop-types';
-
 import { useAuth } from '@/lib/auth';
 import { axios } from '@/lib/axios';
 import { useNotificationStore } from '@/stores/notifications';
+import PropTypes from 'prop-types';
+import { useMutation } from 'react-query';
 
 export const updateProfile = ({ data }) => {
   return axios.patch(`/users/profile`, data);

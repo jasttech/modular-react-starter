@@ -1,3 +1,6 @@
+import logo from '@/assets/logo.svg';
+import { useAuth } from '@/lib/auth';
+import { useAuthorization, ROLES } from '@/lib/authorization';
 import { Dialog, Menu, Transition } from '@headlessui/react';
 import {
   UserIcon,
@@ -8,13 +11,9 @@ import {
   XIcon,
 } from '@heroicons/react/outline';
 import clsx from 'clsx';
+import PropTypes from 'prop-types';
 import * as React from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
-
-import logo from '@/assets/logo.svg';
-import { useAuth } from '@/lib/auth';
-import { useAuthorization, ROLES } from '@/lib/authorization';
 
 const SideNavigation = () => {
   const { checkAccess } = useAuthorization();

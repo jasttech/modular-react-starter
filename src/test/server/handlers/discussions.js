@@ -1,11 +1,9 @@
+import { API_URL } from '@/config';
 import { rest } from 'msw';
 import { nanoid } from 'nanoid';
 
-import { API_URL } from '@/config';
-
 import { db, persistDb } from '../db';
 import { requireAuth, requireAdmin, delayedResponse } from '../utils';
-
 
 export const discussionsHandlers = [
   rest.get(`${API_URL}/discussions`, (req, res, ctx) => {

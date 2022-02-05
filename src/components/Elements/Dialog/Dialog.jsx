@@ -1,6 +1,6 @@
 import { Dialog as UIDialog, Transition } from '@headlessui/react';
-import * as React from 'react';
 import PropTypes from 'prop-types';
+import * as React from 'react';
 import 'intersection-observer';
 
 export const DialogTitle = UIDialog.Title;

@@ -1,6 +1,5 @@
-import { useQuery } from 'react-query';
-
 import { axios } from '@/lib/axios';
+import { useQuery } from 'react-query';
 
 export const getMyTeam = () => {
   return axios.get('/team');

@@ -1,11 +1,9 @@
-import { ArchiveIcon } from '@heroicons/react/outline';
-import PropTypes from 'prop-types';
-
 import { Spinner, MDPreview } from '@/components/Elements';
-import { User } from '@/features/users';
 import { useAuth } from '@/lib/auth';
 import { POLICIES, Authorization } from '@/lib/authorization';
 import { formatDate } from '@/utils/format';
+import { ArchiveIcon } from '@heroicons/react/outline';
+import PropTypes from 'prop-types';
 
 import { useComments } from '../api/getComments';
 

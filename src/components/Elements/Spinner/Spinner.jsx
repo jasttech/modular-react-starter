@@ -42,7 +42,6 @@ export const Spinner = ({ size = 'md', variant = 'primary', className = '' }) =>
   );
 };
 
-
 Spinner.propTypes = {
   size: PropTypes.oneOf(['sm', 'md', 'lg', 'xl']),
   variant: PropTypes.oneOf(['light', 'primary']),

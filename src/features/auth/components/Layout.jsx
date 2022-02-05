@@ -1,8 +1,7 @@
-import PropTypes from 'prop-types';
-
 import logo from '@/assets/logo.svg';
 import { Link } from '@/components/Elements';
 import { Head } from '@/components/Head';
+import PropTypes from 'prop-types';
 
 export const Layout = ({ children, title }) => {
   return (

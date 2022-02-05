@@ -1,8 +1,7 @@
-import clsx from 'clsx';
-import * as React from 'react';
-import PropTypes from 'prop-types';
-
 import { Spinner } from '@/components/Elements/Spinner';
+import clsx from 'clsx';
+import PropTypes from 'prop-types';
+import * as React from 'react';
 
 const variants = {
   primary: 'bg-blue-600 text-white hover:bg-gray-50:text-blue-600',
@@ -51,7 +50,6 @@ export const Button = React.forwardRef(
 );
 
 Button.displayName = 'Button';
-
 
 Button.propTypes = {
   type: PropTypes.string,

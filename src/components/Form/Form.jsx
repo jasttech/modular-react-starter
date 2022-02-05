@@ -1,16 +1,9 @@
 import { zodResolver } from '@hookform/resolvers/zod';
 import clsx from 'clsx';
-import { useForm } from 'react-hook-form';
 import PropTypes from 'prop-types';
+import { useForm } from 'react-hook-form';
 
-export const Form = ({
-  onSubmit,
-  children,
-  className,
-  options,
-  id,
-  schema,
-}) => {
+export const Form = ({ onSubmit, children, className, options, id, schema }) => {
   const methods = useForm({ ...options, resolver: schema && zodResolver(schema) });
   return (
     <form

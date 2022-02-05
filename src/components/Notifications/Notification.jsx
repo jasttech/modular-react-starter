@@ -15,11 +15,7 @@ const icons = {
   error: <XCircleIcon className="h-6 w-6 text-red-500" aria-hidden="true" />,
 };
 
-
-export const Notification = ({
-  notification: { id, type, title, message },
-  onDismiss,
-}) => {
+export const Notification = ({ notification: { id, type, title, message }, onDismiss }) => {
   return (
     <div className="w-full flex flex-col items-center space-y-4 sm:items-end">
       <Transition

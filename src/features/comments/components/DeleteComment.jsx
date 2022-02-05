@@ -1,7 +1,6 @@
+import { Button, ConfirmationDialog } from '@/components/Elements';
 import { TrashIcon } from '@heroicons/react/outline';
 import PropTypes from 'prop-types';
-
-import { Button, ConfirmationDialog } from '@/components/Elements';
 
 import { useDeleteComment } from '../api/deleteComment';
 

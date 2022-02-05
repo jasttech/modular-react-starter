@@ -1,10 +1,9 @@
-import { useParams } from 'react-router-dom';
-
 import { Spinner, MDPreview } from '@/components/Elements';
 import { Head } from '@/components/Head';
 import { ContentLayout } from '@/components/Layout';
 import { Comments } from '@/features/comments';
 import { formatDate } from '@/utils/format';
+import { useParams } from 'react-router-dom';
 
 import { useDiscussion } from '../api/getDiscussion';
 import { UpdateDiscussion } from '../components/UpdateDiscussion';

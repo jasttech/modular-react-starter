@@ -1,9 +1,8 @@
-import { useMutation } from 'react-query';
-import PropTypes from 'prop-types';
-
 import { axios } from '@/lib/axios';
 import { queryClient } from '@/lib/react-query';
 import { useNotificationStore } from '@/stores/notifications';
+import PropTypes from 'prop-types';
+import { useMutation } from 'react-query';
 
 export const updateDiscussion = ({ data, discussionId }) => {
   return axios.patch(`/discussions/${discussionId}`, data);
@@ -25,7 +24,7 @@ export const useUpdateDiscussion = ({ config }) => {
       await queryClient.cancelQueries(['discussion', updatingDiscussion?.discussionId]);
 
       const previousDiscussion =
-        queryClient.getQueryData < Discussion > ['discussion', updatingDiscussion?.discussionId];
+        queryClient.getQueryData[('discussion', updatingDiscussion?.discussionId)];
 
       queryClient.setQueryData(['discussion', updatingDiscussion?.discussionId], {
         ...previousDiscussion,

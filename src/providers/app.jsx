@@ -1,14 +1,13 @@
+import { Button, Spinner } from '@/components/Elements';
+import { Notifications } from '@/components/Notifications/Notifications';
+import { AuthProvider } from '@/lib/auth';
+import { queryClient } from '@/lib/react-query';
 import * as React from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
 import { HelmetProvider } from 'react-helmet-async';
 import { QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
 import { BrowserRouter as Router } from 'react-router-dom';
-
-import { Button, Spinner } from '@/components/Elements';
-import { Notifications } from '@/components/Notifications/Notifications';
-import { AuthProvider } from '@/lib/auth';
-import { queryClient } from '@/lib/react-query';
 
 const ErrorFallback = () => {
   return (

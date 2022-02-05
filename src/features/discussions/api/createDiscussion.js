@@ -1,9 +1,8 @@
-import { useMutation } from 'react-query';
-import PropTypes from 'prop-types';
-
 import { axios } from '@/lib/axios';
 import { queryClient } from '@/lib/react-query';
 import { useNotificationStore } from '@/stores/notifications';
+import PropTypes from 'prop-types';
+import { useMutation } from 'react-query';
 
 export const createDiscussion = ({ data }) => {
   return axios.post(`/discussions`, data);

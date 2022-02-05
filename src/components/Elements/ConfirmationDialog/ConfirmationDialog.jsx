@@ -1,10 +1,9 @@
-import { ExclamationIcon, InformationCircleIcon } from '@heroicons/react/outline';
-import * as React from 'react';
-import PropTypes from 'prop-types';
-
 import { Button } from '@/components/Elements/Button';
 import { Dialog, DialogTitle } from '@/components/Elements/Dialog';
 import { useDisclosure } from '@/hooks/useDisclosure';
+import { ExclamationIcon, InformationCircleIcon } from '@heroicons/react/outline';
+import PropTypes from 'prop-types';
+import * as React from 'react';
 
 export const ConfirmationDialog = ({
   triggerButton,

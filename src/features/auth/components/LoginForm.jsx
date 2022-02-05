@@ -1,10 +1,9 @@
-import { Link } from 'react-router-dom';
-import * as z from 'zod';
-import PropTypes from 'prop-types';
-
 import { Button } from '@/components/Elements';
 import { Form, InputField } from '@/components/Form';
 import { useAuth } from '@/lib/auth';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+import * as z from 'zod';
 
 const schema = z.object({
   email: z.string().min(1, 'Required'),

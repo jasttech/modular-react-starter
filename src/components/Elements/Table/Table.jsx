@@ -1,7 +1,5 @@
-import PropTypes from 'prop-types';
-
 import { ArchiveIcon } from '@heroicons/react/outline';
-
+import PropTypes from 'prop-types';
 
 export const Table = ({ data, columns }) => {
   if (!data?.length) {
@@ -63,6 +61,6 @@ Table.propTypes = {
       Cell: PropTypes.func,
       field: PropTypes.string,
       title: PropTypes.string,
-    }),
+    })
   ),
 };
