@@ -60,10 +60,6 @@
     "lint": "eslint --fix --ext .js,.jsx ./src --ignore-path .gitignore",
     "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|jsx)\"",
     "format": "npm run prettier -- --write",
-    "check-types": "tsc --project jsconfig.json --pretty --noEmit",
-    "check-format": "npm run prettier -- --list-different",
-    "validate-and-build": "npm-run-all --parallel check-types check-format lint build",
-    "validate": "npm-run-all --parallel check-types && lint-staged",
     "generate": "plop",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"

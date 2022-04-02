@@ -1,10 +1,8 @@
-import { render as rtlRender, screen, waitForElementToBeRemoved } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
-import { FunctionComponent } from 'react';
-import PropTypes from 'prop-types';
-
 import { AppProvider } from '@/providers/app';
 import storage from '@/utils/storage';
+import { render as rtlRender, screen, waitForElementToBeRemoved } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import PropTypes from 'prop-types';
 
 import { discussionGenerator, userGenerator } from './data-generators';
 import { db } from './server/db';

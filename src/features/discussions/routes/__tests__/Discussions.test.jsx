@@ -9,7 +9,7 @@ beforeAll(() => {
 });
 
 afterAll(() => {
-  (console.error).mockRestore();
+  console.error.mockRestore();
 });
 
 test('should create, render and delete discussions', async () => {

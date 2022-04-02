@@ -1,5 +1,3 @@
-import { useParams as useMockParams } from 'react-router-dom';
-
 import {
   render,
   screen,
@@ -9,6 +7,7 @@ import {
   createUser,
   within,
 } from '@/test/test-utils';
+import { useParams as useMockParams } from 'react-router-dom';
 
 import { Discussion } from '../Discussion';
 
@@ -21,7 +20,7 @@ const renderDiscussion = async () => {
   const fakeUser = await createUser();
   const fakeDiscussion = await createDiscussion({ teamId: fakeUser.teamId });
 
-  (useMockParams).mockImplementation(() => ({
+  useMockParams.mockImplementation(() => ({
     discussionId: fakeDiscussion.id,
   }));
 

@@ -1,6 +1,4 @@
-import { Meta, Story } from '@storybook/react';
 import PropTypes from 'prop-types';
-
 
 import { Button } from '../Elements';
 

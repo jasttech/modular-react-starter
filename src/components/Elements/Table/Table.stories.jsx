@@ -10,7 +10,6 @@ const meta = {
 
 export default meta;
 
-
 const data = [
   {
     id: '1',
