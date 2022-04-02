@@ -12,7 +12,7 @@ deleteDiscussion.propTypes = {
   discussionId: PropTypes.string.isRequired,
 };
 
-export const useDeleteDiscussion = ({ config }) => {
+export const useDeleteDiscussion = ({ config } = {}) => {
   const { addNotification } = useNotificationStore();
 
   return useMutation({

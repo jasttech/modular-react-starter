@@ -12,7 +12,7 @@ deleteUser.propTypes = {
   userId: PropTypes.string.isRequired,
 };
 
-export const useDeleteUser = ({ config }) => {
+export const useDeleteUser = ({ config } = {}) => {
   const { addNotification } = useNotificationStore();
 
   return useMutation({

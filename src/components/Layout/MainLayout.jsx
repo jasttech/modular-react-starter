@@ -209,7 +209,7 @@ const Logo = () => {
   return (
     <Link className="flex items-center text-white" to=".">
       <img className="h-8 w-auto" src={logo} alt="Workflow" />
-      <span className="text-xl text-white font-semibold">Bulletproof React</span>
+      <span className="text-xl text-white font-semibold">RMS</span>
     </Link>
   );
 };
@@ -222,7 +222,7 @@ export const MainLayout = ({ children }) => {
       <MobileSidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
       <Sidebar />
       <div className="flex flex-col w-0 flex-1 overflow-hidden">
-        <div className="relative z-10 flex-shrink-0 flex h-16 bg-white shadow">
+        <div className="relative z-10 flex-shrink-0 flex h-16 bg-white dark:bg-gray-900 shadow">
           <button
             className="px-4 border-r border-gray-200 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 md:hidden"
             onClick={() => setSidebarOpen(true)}
@@ -236,7 +236,9 @@ export const MainLayout = ({ children }) => {
             </div>
           </div>
         </div>
-        <main className="flex-1 relative overflow-y-auto focus:outline-none">{children}</main>
+        <main className="flex-1 relative overflow-y-auto focus:outline-none dark:bg-gray-700">
+          {children}
+        </main>
       </div>
     </div>
   );

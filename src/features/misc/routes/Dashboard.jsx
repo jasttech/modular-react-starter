@@ -6,13 +6,13 @@ export const Dashboard = () => {
   const { user } = useAuth();
   return (
     <ContentLayout title="Dashboard">
-      <h1 className="text-xl mt-2">
+      <h1 className="text-xl mt-2 dark:text-gray-400">
         Welcome <b>{`${user?.firstName} ${user?.lastName}`}</b>
       </h1>
-      <h4 className="my-3">
+      <h4 className="my-3 dark:text-gray-400">
         Your role is : <b>{user?.role}</b>
       </h4>
-      <p className="font-medium">In this application you can:</p>
+      <p className="font-medium dark:text-gray-400">In this application you can:</p>
       {user?.role === ROLES.USER && (
         <ul className="my-4 list-inside list-disc">
           <li>Create comments in discussions</li>
@@ -20,7 +20,7 @@ export const Dashboard = () => {
         </ul>
       )}
       {user?.role === ROLES.ADMIN && (
-        <ul className="my-4 list-inside list-disc">
+        <ul className="my-4 list-inside list-disc dark:text-gray-400">
           <li>Create discussions</li>
           <li>Edit discussions</li>
           <li>Delete discussions</li>

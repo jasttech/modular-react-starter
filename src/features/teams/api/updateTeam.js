@@ -15,7 +15,7 @@ updateTeam.propTypes = {
   }).isRequired,
 };
 
-export const useUpdateTeam = ({ config }) => {
+export const useUpdateTeam = ({ config } = {}) => {
   const { addNotification } = useNotificationStore();
 
   return useMutation({

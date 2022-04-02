@@ -5,7 +5,7 @@ export const getMyTeam = () => {
   return axios.get('/team');
 };
 
-export const useMyTeam = ({ config }) => {
+export const useMyTeam = ({ config } = {}) => {
   return useQuery({
     ...config,
     queryKey: ['my-teams'],

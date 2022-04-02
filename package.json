@@ -60,6 +60,7 @@
     "lint": "eslint --fix --ext .js,.jsx ./src --ignore-path .gitignore",
     "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|jsx)\"",
     "format": "npm run prettier -- --write",
+    "validate": "npm-run-all --parallel",
     "generate": "plop",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"

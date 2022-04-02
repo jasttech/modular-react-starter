@@ -87,7 +87,7 @@ export const RegisterForm = ({ onSuccess }) => {
                     } inline-block w-4 h-4 transform bg-white rounded-full transition-transform`}
                   />
                 </Switch>
-                <Switch.Label className="ml-4">Join Existing Team</Switch.Label>
+                <Switch.Label className="ml-4 dark:text-gray-400">Join Existing Team</Switch.Label>
               </div>
             </Switch.Group>
 

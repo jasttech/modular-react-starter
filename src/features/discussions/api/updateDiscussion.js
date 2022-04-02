@@ -16,7 +16,7 @@ updateDiscussion.propTypes = {
   discussionId: PropTypes.string.isRequired,
 };
 
-export const useUpdateDiscussion = ({ config }) => {
+export const useUpdateDiscussion = ({ config } = {}) => {
   const { addNotification } = useNotificationStore();
 
   return useMutation({

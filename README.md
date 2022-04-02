@@ -19,7 +19,7 @@ Feel free to explore the codebase to get the most value out of the repo.
 
 #### Disclaimer:
 
-This boilerplate is only meant to be used with Company Projects. It is an opinionated guide that shows how to do some things the Jast Tech way. You are to do everything exactly as it is shown here, because it's been decided that this works best for our team and stay consistent with your style.
+This boilerplate is only meant to be used with Company Projects and related. It is an opinionated guide that shows how to do some things the Jast Tech way. You are to do everything exactly as it is shown here, because it's been decided that this works best for our team and stay consistent with your style.
 
 ## Table Of Contents:
 
