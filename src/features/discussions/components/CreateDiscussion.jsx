@@ -42,18 +42,19 @@ export const CreateDiscussion = () => {
           }}
           schema={schema}
         >
-          {({ register, formState }) => (
+          {({ register, formState, watch, setValue }) => (
             <>
               <InputField
                 label="Title"
                 error={formState.errors['title']}
                 registration={register('title')}
               />
-
               <TextAreaField
                 label="Body"
                 error={formState.errors['body']}
-                registration={register('body')}
+                editorContent={watch('body')}
+                setValue={setValue}
+                value="body"
               />
             </>
           )}
