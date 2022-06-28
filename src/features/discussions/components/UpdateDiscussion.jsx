@@ -51,7 +51,7 @@ export const UpdateDiscussion = ({ discussionId }) => {
           }}
           schema={schema}
         >
-          {({ register, formState }) => (
+          {({ register, formState, watch, setValue }) => (
             <>
               <InputField
                 label="Title"
@@ -61,7 +61,9 @@ export const UpdateDiscussion = ({ discussionId }) => {
               <TextAreaField
                 label="Body"
                 error={formState.errors['body']}
-                registration={register('body')}
+                editorContent={watch('body')}
+                setValue={setValue}
+                value="body"
               />
             </>
           )}

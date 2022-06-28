@@ -22,6 +22,7 @@ export const TextAreaField = (props) => {
   };
 
   const TOOLBAR_OPTIONS = [
+    [],
     ['bold', 'italic', 'underline', 'strike'], // toggled buttons
     ['blockquote', 'code-block'],
 

@@ -46,11 +46,13 @@ export const CreateComment = ({ discussionId }) => {
           }}
           schema={schema}
         >
-          {({ register, formState }) => (
+          {({ setValue, watch, formState }) => (
             <TextAreaField
               label="Body"
               error={formState.errors['body']}
-              registration={register('body')}
+              editorContent={watch('body')}
+              setValue={setValue}
+              value="body"
             />
           )}
         </Form>
