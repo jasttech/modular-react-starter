@@ -10,6 +10,9 @@
 /cypress/videos
 /cypress/screenshots
 
+yarn.lock
+package-lock.json
+
 # production
 /build
 
